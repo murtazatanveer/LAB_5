@@ -15,3 +15,19 @@ int toGrayScaleAverage(int r, int g, int b) {
   //TODO: test this, it may be wrong!
   return (r + g + b) / 3;
 }
+
+// Defination of min(); function
+
+int min(int a,int b ,int c){
+
+if(a>=b && a>=c){
+  return a;
+}
+
+else if( b>=a && b>=c){
+  return b;
+}
+
+return c;
+
+}

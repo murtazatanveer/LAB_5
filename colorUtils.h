@@ -26,3 +26,7 @@ int max(int x, int y, int z);
  *
  */
 int toGrayScaleAverage(int r, int g, int b);
+
+// Prototype of function min(); 
+
+int min(int a,int b ,int c);
