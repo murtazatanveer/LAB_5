@@ -51,3 +51,12 @@ float grey_scale_value = (0.21 * red) + (0.72 * green) + (0.07 * blue);
 return grey_scale_value;
 
 }
+
+// Defination of toSepiaRed(); function 
+
+float toSepiaRed(int red,int green,int blue){
+
+float sepia_red =  (0.393 * red) + (0.769 * green) + (0.189 * blue);
+
+return sepia_red;
+}
