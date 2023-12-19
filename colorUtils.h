@@ -30,3 +30,7 @@ int toGrayScaleAverage(int r, int g, int b);
 // Prototype of function min(); 
 
 int min(int a,int b ,int c);
+
+// Prototype of function toGrayScaleLightness(); 
+
+float toGrayScaleLightness(int red, int green, int blue);

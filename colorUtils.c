@@ -20,14 +20,24 @@ int toGrayScaleAverage(int r, int g, int b) {
 
 int min(int a,int b ,int c){
 
-if(a>=b && a>=c){
+if(a<=b && a<=c){
   return a;
 }
 
-else if( b>=a && b>=c){
+else if( b<=a && b<=c){
   return b;
 }
 
 return c;
+
+}
+
+// Defination of toGrayScaleLightness(); function
+
+float toGrayScaleLightness(int red, int green, int blue){
+
+float grey_scale_value = ( max(red,green,blue) + min(red,green,blue) ) / 2;
+
+return grey_scale_value;
 
 }
