@@ -262,9 +262,9 @@ r = 5, g = 10, b = 15;
   }
 
 r = 5, g = 10, b = 15;
-  expectedResult = 9.3;
-  printf("TESTING: toGrayScaleLuminosity(%d,%d,%d): ", r, g, b);
-  result = toGrayScaleLuminosity(r, g, b);
+  expectedResult = 12.49;
+  printf("TESTING: toSepiaRed(%d,%d,%d): ", r, g, b);
+  result = toSepiaRed(r, g, b);
   
   if(result != expectedResult) {
     printf("FAILED: max returned %d, expected %d\n", result, expectedResult);
@@ -273,7 +273,33 @@ r = 5, g = 10, b = 15;
     printf("PASSED\n");
     numPassed++;
   }
+
+r = 5, g = 10, b = 15;
+  expectedResult = 11.125;
+  printf("TESTING:toSepiaGreen(%d,%d,%d): ", r, g, b);
+  result = toSepiaGreen(r, g, b);
   
+  if(result != expectedResult) {
+    printf("FAILED: max returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
+
+  r = 5, g = 10, b = 15;
+  expectedResult = 8.605;
+  printf("TESTING:toSepiaBlue(%d,%d,%d): ", r, g, b);
+  result = toSepiaBlue(r, g, b);
+  
+  if(result != expectedResult) {
+    printf("FAILED: max returned %d, expected %d\n", result, expectedResult);
+    numFailed++;
+  } else {
+    printf("PASSED\n");
+    numPassed++;
+  }
+
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
